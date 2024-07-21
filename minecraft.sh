@@ -21,9 +21,9 @@ server_url=${server_url:-"https://piston-data.mojang.com/v1/objects/5b868151bd02
 # Download the Minecraft server script
 wget -O server.jar $server_url
 
-# Download openjdk-17-jdk
+# Download openjdk-21-jdk
 sudo apt-get update
-sudo apt-get install openjdk-17-jdk -y
+sudo apt-get install openjdk-21-jdk -y
 
 # Ask the user if they accept the Minecraft EULA
 read -p "Do you accept the Minecraft EULA? (Type 'yes' or 'y' to accept): " eula_acceptance
